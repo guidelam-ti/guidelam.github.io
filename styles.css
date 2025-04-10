@@ -1,0 +1,454 @@
+/* Reset de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .custom-color {
+    color: #58A4B7;
+}
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Header et navigation */
+  header {
+    background: #58A4B7;
+    padding: 20px 0;
+    border-bottom: 1px solid #eaeaea;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo h1 {
+    font-size: 1.8rem;
+    color: #e7eced;
+  }
+  
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    color: #58A4B7;
+  }
+  
+  .nav-menu li {
+    margin: 0 15px;
+  }
+  
+  .nav-menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .nav-menu li a:hover {
+    color: #000a0c;
+  }
+  
+  /* Section Hero */
+  .hero {
+    
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+    position: relative;
+  }
+  
+  .hero::after {
+    content: "";
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+  }
+  
+  .hero .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    background: #58A4B7;
+    color: #fff;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .btn:hover {
+    background: #58A4B7;
+  }
+  
+  /* Styles généraux */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #1A2E4F;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 120px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Section Animation */
+.animation-section {
+  padding: 2px 0;
+  background-color: #F5F7FA;
+}
+
+.animation-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2px;
+  color: #58A4B7;
+}
+
+.animation-content {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.animation-item {
+  background-color: #FFFFFF;
+  border: 1px solid #DDD;
+  border-radius: 10px;
+  padding: 40px;
+  width: 80%;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animation-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animation-item img {
+  width: 60px;
+  margin-bottom: 20px;
+}
+
+.animation-item p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.mission-text {
+  font-size: 1.2rem;
+  color: #58A4B7;
+  margin-top: 48px;
+}
+
+#mission-highlight {
+  color: #58A4B7;
+  font-weight: bold;
+}
+  /* Sections générales */
+  section {
+    padding: 60px 0;
+  }
+  
+  section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+  }
+  
+  /* Section À propos */
+  #about p {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  /* Section Services */
+  .services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .service {
+    flex: 1 1 300px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  /* Section Contact */
+  .contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .contact-info {
+    text-align: center;
+
+  }
+  
+  .contact-info, .contact-form {
+    flex: 1 1 300px;
+    
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-control {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-control label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-control input,
+  .form-control textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Chatbot styles */
+  #chatbot {
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    width: 300px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 1000;
+  }
+  
+  #chatbot.active {
+    display: flex;
+  }
+  
+  #chatbot-header {
+    background: #58A4B7;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #chatbot-header h3 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  
+  #chatbot-close {
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+  
+  #chatbot-messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    max-height: 300px;
+  }
+  
+  .message {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .message.user {
+    align-items: flex-end;
+  }
+  
+  .message.bot {
+    align-items: flex-start;
+  }
+  
+  .message p {
+    background: #f1f1f1;
+    padding: 8px 12px;
+    border-radius: 5px;
+    max-width: 80%;
+  }
+  
+  .message.user p {
+    background: #58A4B7;
+    color: #fff;
+  }
+  
+  #chatbot-input {
+    display: flex;
+    border-top: 1px solid #ccc;
+  }
+  
+  #chatbot-input input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+  }
+  
+  #chatbot-input button {
+    background: #58A4B7;
+    border: none;
+    color: #fff;
+    padding: 0 15px;
+    cursor: pointer;
+  }
+  
+  /* Bouton de bascule du chatbot */
+  #chatbot-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #58A4B7;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1rem;
+    z-index: 1000;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .nav-menu {
+      flex-direction: column;
+    }
+    
+    .nav-menu li {
+      margin: 10px 0;
+    }
+    
+    .contact-content {
+      flex-direction: column;
+    }
+  }
+
+  /* Styles généraux du pied de page */
+footer {
+  background-color: #58A4B7;
+  color: #FFFFFF;
+  padding: 40px 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-section {
+  width: 30%;
+  min-width: 250px;
+}
+
+.footer-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.footer-section p, .footer-section ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-section p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
+
+.footer-section a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.footer-section a:hover {
+  color: #58A4B7;
+  text-decoration: underline;
+}
+
+/* Icônes des réseaux sociaux */
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-links img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+  transform: scale(1.1);
+}
+
+/* Section Copyright */
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.8rem;
+  border-top: 1px solid #58A4B7;
+  padding-top: 20px;
+}
+  

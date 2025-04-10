@@ -1,0 +1,135 @@
+/* custom.css */
+:root {
+    --primary-color: #58A4B7;
+    --secondary-color: #030303;
+    --accent-color: #58A4B7;
+    --light-color: #F5F7FA;
+    --dark-color: #333333;
+  }
+  
+  .custom-color {
+    color: #58A4B7;
+}
+  body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--dark-color);
+  }
+  
+  /* Header */
+  header {
+    background: var(--primary-color);
+    padding: 15px 0;
+  }
+  
+  .navbar-brand {
+    font-weight: 700;
+    color: white !important;
+  }
+  
+  .navbar-nav .nav-link {
+    color: rgba(255,255,255,0.9) !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: white !important;
+    transform: translateY(-2px);
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 120px 0;
+    position: relative;
+  }
+  
+  /* Buttons */
+  .btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+  
+  .btn-primary:hover {
+    background-color: #216154;
+    border-color: #4a8a9a;
+  }
+  
+  /* Services */
+  .card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+  }
+  
+  /* Contact Form */
+  .form-control {
+    border-radius: 0;
+    padding: 12px;
+  }
+  
+  .form-control:focus {
+    box-shadow: none;
+    border-color: var(--primary-color);
+  }
+  
+  /* Footer */
+  footer {
+    background-color: var(--secondary-color);
+  }
+  
+  .footer-link {
+    color: rgba(255,255,255,0.7);
+    transition: color 0.3s ease;
+  }
+  
+  .footer-link:hover {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Social Icons */
+  .social-icon {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-3px);
+  }
+  
+  /* Chatbot */
+  #chatbot {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  }
+  
+  #chatbot-toggle {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #chatbot-toggle i {
+    font-size: 24px;
+  }
